@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+    
+    
+}
+.top-wrapper {
+    margin:2rem 0 0 0 ;
+    width: 100%;
+    position: sticky;
+    z-index: 10000;
+    left:0;
+    top: 2rem;
+}
+.nav-container {
+    display: flex;
+    
+
+    
+    
+}
+.logo-container {
+    
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin-left: 3rem;
+    height: auto;
+    position: relative;
+    left: 3vw;
+    flex: 1;
+    
+    
+    
+}
+.vertical-divider {
+    
+    
+    z-index: 10;
+    border: none;
+    height: 1px;
+    width: clamp(530px,39vw,40vw);
+    background-color:rgba(151,151,151,100%);
+   
+    
+    
+}
+nav  {
+    
+    display: flex;
+    
+    background-color: rgba(255,255,255,5%);
+    backdrop-filter: blur(50px);
+    justify-content: center;
+    flex: 1;
+    
+    gap: 2vw;
+    height: clamp(5vw,6vw,8vw);
+    padding-right: 4rem;
+    flex-shrink: 2;
+    
+    
+    
+    
+   
+    
+}
+.bold {
+    font-weight: 600;
+    color: white;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    gap: .5rem;
+    
+    margin: 0;
+    letter-spacing: .15rem;
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu-link {
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    border-bottom:none;
+   
+    margin-left: 3rem;
+    justify-content: center;
+    cursor: pointer;
+   
+
+}
+.menu-link::after, .menu-link-active::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #ffffff; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.menu-link-active::after {
+
+    transform: translateX(-50%) scaleX(1);
+
+}
+
+.menu-link:hover::after {
+    transform: translateX(-50%) scaleX(1); 
+}
+
+.burger {
+    display: none;
+    align-self: center;
+}

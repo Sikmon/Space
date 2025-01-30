@@ -1,0 +1,291 @@
+html, body {
+    
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+* {
+    box-sizing: border-box;
+    
+    
+}
+.top-wrapper {
+    margin:2rem 0 0 0 ;
+    width: 100%;
+    position: sticky;
+    z-index: 10000;
+    left:0;
+    top: 2rem;
+}
+.nav-container {
+    display: flex;
+    
+
+    
+    
+}
+.logo-container {
+    
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin-left: 3rem;
+    height: auto;
+    position: relative;
+    left: 3vw;
+    flex: 1;
+    
+    
+    
+}
+.vertical-divider {
+    
+    
+    z-index: 10;
+    border: none;
+    height: 1px;
+    width:38vw;
+    background-color:rgba(151,151,151,100%);
+   
+    
+    
+}
+nav  {
+    
+    display: flex;
+    
+    background-color: rgba(255,255,255,5%);
+    backdrop-filter: blur(50px);
+    justify-content: center;
+    flex: 1;
+    
+    gap: 2rem;
+    height: clamp(5vw,6vw,6vw);
+    padding-right: 4rem;
+    width: auto;
+
+    
+}
+.bold {
+    font-weight: 600;
+    color: white;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    gap: .5rem;
+    
+    margin: 0;
+    letter-spacing: .15rem;
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu-link {
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    
+   
+    margin-left: 3rem;
+    justify-content: center;
+    cursor: pointer;
+   
+
+}
+.menu-link::after, .menu-link-active::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #ffffff; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.menu-link-active::after {
+
+    transform: translateX(-50%) scaleX(1);
+
+}
+
+.menu-link:hover::after {
+    transform: translateX(-50%) scaleX(1); 
+}
+
+
+.burger {
+    display: none;
+    align-self: center;
+}
+
+main {
+    margin:0;
+    padding:0 6rem 2.5rem 14rem;
+    display: flex;
+    max-width: 2160px;
+    justify-self: center;
+    align-self: center;
+}
+.destinations-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    
+    
+    
+    margin: 0;
+    
+    width: auto;
+
+}
+.destinations-wrapper h3 {
+    
+    color: white;
+    font-family: "Barlow Condensed",serif;
+    font-weight: 100;
+    font-size: 1.6rem;
+    margin-bottom: -1rem;
+}
+.destinations-container {
+    display: flex;
+    gap: 0;
+    
+    
+    
+
+}
+.planet-image-container {
+    flex:1;
+    display: block
+    
+    
+}
+.planet-image-container img {
+    width: 60%;
+    max-width: 450px;
+    min-width: 220px;
+    height: auto;
+}
+.planet-details-container {
+    width: auto;
+    flex:1;
+    
+    
+    
+    
+}
+.destinations-wrapper ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+    padding: 2rem 0 2rem 0;
+    margin-bottom: -3rem;
+}
+
+.destinations-wrapper a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-family: "Barlow Condensed", serif;
+    font-size: 1.2rem;
+    height: 100%;
+    letter-spacing: .1rem;
+    
+    
+}
+.destinations-wrapper a::after,.destinations-wrapper a:active::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #ffffff; 
+    transition: transform 0.3s ease-in-out; 
+}
+.destinations-wrapper a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+.destinations-wrapper a:active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+.destinations-container {
+    transition: 1s ease;
+}
+
+.planet-details-container h1 {
+    text-transform: uppercase;
+    font-family: "Bellefair",serif;
+    color: white;
+    font-size: 4rem;
+    font-weight: 300;
+}
+.planet-details-container p {
+    
+    color: white;
+    font-family:"Barlow Condensed",serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+    margin-top: -1rem;
+    width: 70%;
+
+    
+
+}
+.small-divider {
+    width: 75%;
+    height: 1px;
+    background-color: rgb(77, 76, 76);
+}
+
+.info {
+    display: flex;
+    color: white;
+    text-align: center;
+    gap: 9rem;
+    width: 70%;
+    justify-content: flex-start;
+}
+.info h4 {
+    font-family: "Barlow Condensed",serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: .08rem;
+}
+.info h2 {
+    font-family: "Bellefair",serif;
+    font-weight: 200;
+    font-size: 1.8rem;
+    margin-top: -1rem;
+    
+}    
+
+

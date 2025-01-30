@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="stylesheet" href="destinations.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="top-wrapper">
+    <div class="nav-container">
+      <div class="logo-container">
+       <div class="logo"><a href="index.html"><img src="assets/shared/logo.svg" alt=""></a></div>
+       <div class="vertical-divider"></div>
+      </div>
+   
+      <nav>
+      <div class="close"><img src="assets/shared/icon-close.svg" alt=""></div>
+      <div class="menu-link"><a href="index.html"><span class="bold">00</span> HOME</a></div>
+      <div class="menu-link menu-link-active"><a href="destination.html"><span class="bold">01</span> DESTINATION</a></div>
+      <div class="menu-link"><a href="crew.html"><span class="bold">02</span> CREW</a></div>
+      <div class="menu-link"><a href="technology.html"><span class="bold">03</span> TECHNOLOGY</a></div>
+      </nav>
+      <div class="burger"><img src="assets/shared/icon-hamburger.svg" alt=""></div>
+   </div>
+  </div>
+  <main>
+    <div class="destinations-wrapper destinations-wrapper active">
+      <h3>01 PICK YOUR DESTINATION</h3>
+      <div class="destinations-container">
+        <div class="planet-image-container"><img src="assets/destination/image-moon.png" alt="" class="planet-image"></div>
+        <div class="planet-details-container">
+          <ul>
+            <li><a href="" class="planets" data-value="Moon">MOON</a></li>
+            <li><a href="" class="planets" data-value="Mars">MARS</a></li>
+            <li><a href="" class="planets" data-value="Europa">EUROPA</a></li>
+            <li><a href="" class="planets" data-value="Titan">TITAN</a></li>
+          </ul>
+          <div class="description-container global-container">
+            <h1 class="planet-name">MOON</h1>
+            <p class="planet-description">See our planet as you’ve never seen it before.
+               A perfect relaxing trip away to help regain perspective and come back refreshed.
+                While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+            <div class="small-divider"></div>
+            <div class="info">
+              <div class="distance">
+                <h4> AVG. DISTANCE</h4>
+                <h2 class="planet-distance">384,400 km</h2>
+
+              </div>
+              <div class="travel-time">
+                <h4>EST. TRAVEL TIME</h4>
+                <h2 class="planet-travel">3 days</h2>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
